@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                sh 'docker build -t <your-docker-username>/hello-world-app .'
+                sh 'docker push <your-docker-username>/hello-world-app'
+                // Další kroky pro nasazení pomocí Argo CD
+            }
+        }
+    }
+}
