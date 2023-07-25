@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: calculator
-        image: srbino/calculator:latest
+        image: srbino/calculator_for_k8s:latest
         ports:
         - containerPort: 5000

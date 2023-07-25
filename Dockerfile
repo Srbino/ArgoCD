@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Spuštění Python skriptu
-CMD ["python", "./calculator.py"]
+CMD ["python", "./app.py"]
