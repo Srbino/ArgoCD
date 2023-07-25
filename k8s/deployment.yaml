@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: calculator
-        image: srbino/testing_environment:latest
+        image: srbino/calculator:latest
         ports:
         - containerPort: 5000
